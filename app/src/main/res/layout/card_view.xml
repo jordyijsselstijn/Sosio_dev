@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv"
+        style="@style/CardViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:elevation="5dp"
+        android:paddingBottom="10dp"
+        android:clickable="true">
+
+        <FrameLayout
+            app:layout_heightPercent="50%"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            >
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/event_image"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                app:riv_corner_radius_bottom_left="0dp"
+                app:riv_corner_radius_bottom_right="0dp"
+                app:riv_corner_radius_top_left="@dimen/card_corner_radius"
+                app:riv_corner_radius_top_right="@dimen/card_corner_radius" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/frame1"
+            app:layout_heightPercent="50%">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/app_name"
+                android:id="@+id/event_title"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:paddingLeft="10dp" />
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:background="#ffffff">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/favorite_button"
+                    android:layout_gravity="left|center_vertical"
+                    android:src="@drawable/ic_favorite_outline_24dp"
+                    android:clickable="true"
+                    android:paddingLeft="@dimen/icon_clearance"
+                    android:contentDescription="favorite_button" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/bookmark_button"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_bookmark_outline_24dp"
+                    android:clickable="true"
+                    android:paddingLeft="@dimen/icon_clearance"
+                    android:contentDescription="bookmark_button" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/share_button"
+                    android:layout_gravity="right|center_vertical"
+                    android:src="@drawable/ic_share_24dp"
+                    android:scaleType="fitStart"
+                    android:clickable="true"
+                    android:paddingLeft="@dimen/icon_clearance"
+                    android:contentDescription="share_button" />
+            </LinearLayout>
+
+        </FrameLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</FrameLayout>
