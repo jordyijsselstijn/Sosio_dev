@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:padding="10dp"
+    android:layout_marginTop="5dp"
+    android:elevation="5dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rewardImage"
+        android:src="@drawable/moccamore"
+        android:scaleType="matrix" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/rewardTitle"
+            android:textColor="@color/colorCoolAqua"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/rewardLocation"
+            android:textSize="15dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView3"
+                android:src="@drawable/ic_stars_24dp"
+                android:tint="@color/colorCoolAqua" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:id="@+id/rewardCost"
+                android:textSize="30dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="right">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="70dp"
+            android:id="@+id/imageView4"
+            android:src="@drawable/ic_bookmark_outline_24dp"
+            android:scaleType="fitEnd"
+            android:layout_gravity="right" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reviews >"
+            android:id="@+id/reviewsButton"
+            android:background="#ffffff"
+            android:layout_gravity="right" />
+    </LinearLayout>
+
+</LinearLayout>

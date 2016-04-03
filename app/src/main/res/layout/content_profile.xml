@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="nl.jordyijsselstijn.sosio_dev.profileActivity"
+    tools:showIn="@layout/activity_profile"
+    android:background="@color/grey_500"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:clipToPadding="false"
+        android:background="#ffffff">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:padding="10dp"
+            android:elevation="5dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/profilePicture"
+                android:src="@drawable/gregory_profile"
+                android:layout_alignParentRight="true" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toStartOf="@+id/profilePicture"
+                android:weightSum="1"
+                android:id="@+id/linearLayout3"
+                android:layout_alignParentLeft="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Welcome back!"
+                    android:id="@+id/profileTitle"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorCoolAqua"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="179dp"
+                    android:layout_height="wrap_content"
+                    android:text="Have you earned enough points for your stay?"
+                    android:id="@+id/profileMessage"
+                    android:layout_marginTop="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignEnd="@+id/linearLayout3"
+                android:id="@+id/linearLayout4">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes!"
+                    android:id="@+id/profileButtonYes"
+                    android:background="#ffffff"
+                    android:textColor="@color/colorCoolAqua" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nope"
+                    android:id="@+id/profileButtonNope"
+                    android:background="#ffffff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/profilePicture"
+                android:layout_toEndOf="@+id/linearLayout3"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:text="Current points"
+                    android:id="@+id/textView"
+                    android:layout_below="@+id/profilePicture"
+                    android:layout_toEndOf="@+id/linearLayout3" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorCoolAqua"
+                    android:padding="2dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="220"
+                        android:id="@+id/textView2"
+                        android:textColor="#ffffff"
+                        android:padding="5dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView"
+                        android:src="@drawable/ic_stars_24dp"
+                        android:tint="#ffffff" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rewardListView"
+        android:clipToPadding="false"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>

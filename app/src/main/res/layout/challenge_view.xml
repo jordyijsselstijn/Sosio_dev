@@ -1,6 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center|center_horizontal">
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="top">
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/challengeImage"
+                android:src="@drawable/challenge_1"
+                android:scaleType="fitStart"
+                android:layout_gravity="left"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="227dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recruit 4 new people for this event"
+                android:id="@+id/challengeTitle"
+                android:textStyle="bold"
+                android:gravity="top"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/challengeDescription"
+                android:text="and add them with layar"
+                android:gravity="bottom"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/imageView2"
+                android:src="@drawable/ic_stars_24dp"
+                android:tint="#7dd6b5"
+                android:layout_alignParentTop="false"
+                android:scaleType="center"
+                android:layout_alignParentEnd="false"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:id="@+id/pointTotal"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+    </LinearLayout>
 
 </LinearLayout>
