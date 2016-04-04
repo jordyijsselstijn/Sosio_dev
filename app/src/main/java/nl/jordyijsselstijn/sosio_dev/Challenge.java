@@ -1,4 +1,4 @@
-package nl.nickderonde.sosio;
+package nl.jordyijsselstijn.sosio_dev;
 
 /**
  * Created by jordyijsselstijn on 03-04-16.

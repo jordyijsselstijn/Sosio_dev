@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="nl.nickderonde.sosio">
+    package="nl.jordyijsselstijn.sosio_dev">
 
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
@@ -13,7 +13,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="nl.nickderonde.sosio.MainActivity">
+        <activity android:name="nl.jordyijsselstijn.sosio_dev.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,7 +21,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="nl.nickderonde.sosio.EventActivity"
+            android:name="nl.jordyijsselstijn.sosio_dev.EventActivity"
             android:label="@string/title_activity_event"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -31,7 +31,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="nl.nickderonde.sosio.profileActivity"
+            android:name="nl.jordyijsselstijn.sosio_dev.profileActivity"
             android:label="@string/title_activity_profile"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -40,7 +40,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name="nl.nickderonde.sosio.LayarActivity">
+        <activity android:name="nl.jordyijsselstijn.sosio_dev.LayarActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

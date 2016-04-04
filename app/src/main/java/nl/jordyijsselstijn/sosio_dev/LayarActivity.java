@@ -1,4 +1,4 @@
-package nl.nickderonde.sosio;
+package nl.jordyijsselstijn.sosio_dev;
 
 import android.Manifest;
 import android.content.Context;

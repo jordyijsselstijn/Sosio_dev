@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="nl.nickderonde.sosio.LayarActivity">
+    tools:context="nl.jordyijsselstijn.sosio_dev.LayarActivity">
 
     <Button
         android:layout_width="wrap_content"

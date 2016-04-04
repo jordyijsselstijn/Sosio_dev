@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="nl.nickderonde.sosio.profileActivity"
+    tools:context="nl.jordyijsselstijn.sosio_dev.profileActivity"
     tools:showIn="@layout/activity_profile"
     android:background="@color/grey_500"
     android:padding="10dp">
