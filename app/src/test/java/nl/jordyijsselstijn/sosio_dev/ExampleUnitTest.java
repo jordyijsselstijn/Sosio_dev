@@ -1,4 +1,4 @@
-package nl.jordyijsselstijn.sosio_dev;
+package nl.nickderonde.sosio;
 
 import org.junit.Test;
 

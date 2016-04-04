@@ -5,7 +5,7 @@ android {
     buildToolsVersion "23.0.2"
 
     defaultConfig {
-        applicationId "nl.jordyijsselstijn.sosio_dev"
+        applicationId "nl.nickderonde.sosio"
         minSdkVersion 23
         targetSdkVersion 23
         versionCode 1
@@ -29,4 +29,7 @@ dependencies {
     compile 'com.squareup.picasso:picasso:2.5.2'
     compile 'com.android.support:percent:23.1.0'
     compile 'com.android.support:design:23.2.1'
+    compile project(':layar_sdk')
+
+
 }
