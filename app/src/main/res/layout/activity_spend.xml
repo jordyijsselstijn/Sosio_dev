@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="nl.jordyijsselstijn.sosio_dev.SpendActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView7"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/coffee"
+            android:layout_alignParentStart="true"
+            android:scaleType="fitXY" />
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/imageView7">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Coffee"
+                    android:id="@+id/textView8"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:layout_alignParentTop="false"
+                    android:layout_alignParentStart="false"
+                    android:layout_alignBottom="@+id/imageView7"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\@Ibis Rotterdam"
+                    android:id="@+id/textView9"
+                    android:textSize="20sp"
+                    android:textColor="#ffffff"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="false"
+                    android:layout_alignParentEnd="false" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView8"
+                    android:src="@drawable/ic_stars_24dp"
+                    android:tint="@color/colorCoolAqua"
+                    android:scaleType="center"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:id="@+id/textView10"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/relativeLayout4">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:padding="5dp"
+                android:id="@+id/relativeLayout3">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView9"
+                    android:src="@drawable/ic_attach_money_24dp"
+                    android:tint="@color/colorCoolAqua"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:text="You&apos;ve got enough points to share your coffee with other SOSIO&apos;s"
+                    android:id="@+id/textView11"
+                    android:lines="2"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:layout_alignParentTop="false"
+                    android:layout_marginLeft="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/imageView10" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView10"
+                    android:layout_alignParentTop="false"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_stars_24dp"
+                    android:tint="@color/colorCoolAqua"
+                    android:scaleType="fitXY"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="25dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4"
+                    android:id="@+id/textView12"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:textSize="15sp"
+                    android:layout_marginRight="15dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorCoolAqua" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="false"
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="60dp">
+
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:text="You can earn 0.5 points each if you treat a SOSIO on a cup of coffee"
+                    android:id="@+id/textView13"
+                    android:layout_below="@+id/relativeLayout3"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="I LIKE TO TREAT"
+                android:id="@+id/button"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="27dp"
+                android:background="@color/colorAccent"
+                android:padding="10dp"
+                android:textColor="#ffffff" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/relativeLayout4"
+            android:layout_centerHorizontal="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/relativeLayout6" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:padding="5dp"
+                    android:id="@+id/relativeLayout5" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView11"
+                        android:src="@drawable/ic_attach_money_24dp"
+                        android:tint="@color/colorCoolAqua"
+                        android:layout_centerVertical="true" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView12"
+                        android:layout_alignParentTop="false"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/ic_stars_24dp"
+                        android:tint="@color/colorCoolAqua"
+                        android:scaleType="fitXY"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="25dp" />
+
+                    <TextView
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:text="Redeem your coffee"
+                        android:id="@+id/textView14"
+                        android:lines="2"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_alignTop="@+id/imageView12"
+                        android:layout_toStartOf="@+id/imageView12" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1"
+                        android:id="@+id/textView15"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:textSize="15sp"
+                        android:layout_marginRight="15dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorCoolAqua" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="false"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginLeft="60dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Let the bartender scan your personal layer image"
+                        android:id="@+id/textView16" />
+                </RelativeLayout>
+
+                <Button
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:text="GIVE ME MY COFFEE"
+                    android:id="@+id/button2"
+                    android:background="@color/colorAccent"
+                    android:padding="10dp"
+                    android:textColor="#ffffff"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

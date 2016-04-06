@@ -1,12 +1,15 @@
 package nl.jordyijsselstijn.sosio_dev;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
@@ -21,13 +24,20 @@ public class profileActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        final ListView lv = (ListView) findViewById(R.id.rewardListView);
+        ListView lv = (ListView) findViewById(R.id.rewardListView);
         Reward[] rewards = new Reward[]{
                 new Reward("Free coffee", "@Moccamore", "20", R.drawable.moccamore),
                 new Reward("1 Free night", "@Hotel Ibis Amsterdam","250" ,R.drawable.ibis)
         };
         rewardListAdapter adapter = new rewardListAdapter(this, rewards);
+        assert lv != null;
         lv.setAdapter(adapter);
+        lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+            }
+        });
 
 
     }
@@ -62,7 +72,13 @@ public class profileActivity extends AppCompatActivity {
             rewardCost.setText(rewards[position].getCost());
             rewardlocation.setText(rewards[position].getLocation());
             rewardImage.setImageResource(rewards[position].getImagePath());
-
+            rowView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent goToSpending = new Intent(profileActivity.this, SpendActivity.class);
+                    startActivity(goToSpending);
+                }
+            });
 
             return rowView;
         }

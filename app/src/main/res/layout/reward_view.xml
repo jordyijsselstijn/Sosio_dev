@@ -1,18 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal" android:layout_width="fill_parent"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
     android:layout_height="match_parent"
     android:background="#ffffff"
     android:padding="10dp"
     android:layout_marginTop="5dp"
-    android:elevation="5dp">
+    android:elevation="5dp"
+    android:clickable="true"
+    >
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/rewardImage"
         android:src="@drawable/moccamore"
-        android:scaleType="matrix" />
+        android:scaleType="matrix"
+        android:focusableInTouchMode="false"
+        android:clickable="false"
+        android:focusable="false"/>
 
     <LinearLayout
         android:orientation="vertical"
@@ -26,6 +32,9 @@
             android:text="New Text"
             android:id="@+id/rewardTitle"
             android:textColor="@color/colorCoolAqua"
+            android:focusableInTouchMode="false"
+            android:clickable="false"
+            android:focusable="false"
             android:textSize="30dp" />
 
         <TextView
@@ -33,6 +42,9 @@
             android:layout_height="wrap_content"
             android:text="New Text"
             android:id="@+id/rewardLocation"
+            android:focusableInTouchMode="false"
+            android:clickable="false"
+            android:focusable="false"
             android:textSize="15dp" />
 
         <LinearLayout
@@ -46,12 +58,18 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/imageView3"
                 android:src="@drawable/ic_stars_24dp"
+                android:focusableInTouchMode="false"
+                android:clickable="false"
+                android:focusable="false"
                 android:tint="@color/colorCoolAqua" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="100"
+                android:focusableInTouchMode="false"
+                android:clickable="false"
+                android:focusable="false"
                 android:id="@+id/rewardCost"
                 android:textSize="30dp" />
 
@@ -70,6 +88,9 @@
             android:id="@+id/imageView4"
             android:src="@drawable/ic_bookmark_outline_24dp"
             android:scaleType="fitEnd"
+            android:focusableInTouchMode="false"
+            android:clickable="false"
+            android:focusable="false"
             android:layout_gravity="right" />
 
         <Button

@@ -11,6 +11,8 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.layar.sdk.LayarSDK;
+import com.layar.sdk.LayarSDKClient;
+import com.layar.sdk.LayarSDKFragment;
 
 
 public class LayarActivity extends AppCompatActivity {
@@ -24,24 +26,25 @@ public class LayarActivity extends AppCompatActivity {
 
 
         final Context cntx = this;
+
         final Button btn  = (Button) findViewById(R.id.layarInitButton);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                init(v.getContext());
+                init();
             }
         });
 
     }
 
-    public void init(Context cntx){
+    public void init(){
 
-            if(ContextCompat.checkSelfPermission(cntx, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED){
-                initLayar(cntx, "xnqudWtrUJeQHCfo", "ECqLwGjiatJxsvogyWYmzXupUARZMOcB");
+            if(ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED){
+                initLayar(this, "xnqudWtrUJeQHCfo", "ECqLwGjiatJxsvogyWYmzXupUARZMOcB");
 
             }else{
                 if(shouldShowRequestPermissionRationale(Manifest.permission.ACCESS_FINE_LOCATION)){
-                    Toast.makeText(cntx, "Fine location needed in order to use Layar", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "Fine location needed in order to use Layar", Toast.LENGTH_SHORT).show();
                 }
                 requestPermissions(new String[] {Manifest.permission.ACCESS_FINE_LOCATION}, REQUEST_FINE_LOCATION_RESULT);
             }
@@ -50,8 +53,10 @@ public class LayarActivity extends AppCompatActivity {
 
     public void initLayar(Context cntx, String layarKey, String layarSecret){
 
-        LayarSDK.initialize(cntx, layarKey, layarSecret);
-        LayarSDK.startLayarActivity(cntx);
+        LayarSDK.initialize(this, layarKey, layarSecret);
+        LayarSDK.startLayarActivity(this);
+
+
     }
 
     public static boolean isPermissionGranted(String permission, Context context){
